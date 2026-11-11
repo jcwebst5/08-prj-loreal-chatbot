@@ -55,7 +55,7 @@ function appendFormattedResponse(paragraph, response) {
       const productName = (productItem[1] || productItem[2]).trim();
       const link = document.createElement("a");
       link.className = "product-link";
-      link.href = `https://www.lorealparisusa.com/search?search=${encodeURIComponent(productName)}`;
+      link.href = `https://www.lorealparisusa.com/search-page?q=${encodeURIComponent(productName)}`;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.textContent = productName;
